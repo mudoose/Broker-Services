@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Broker Services:: Contact Us</title>
+        <link rel="stylesheet" href="kp.css">
+          <meta name="description" content="Contact Kaiser Permanente for Additional Support.">
+    </head>
+    <body>
+    <div id="wrapper">
+        <section class="swimlane swimlane-top">
+            <div class="top-left">
+                <div class="page-title">
+                    <h1>Broker Services: Contact Us</h1>
+                    <img src="kplogo.jpg" alt="Kaiser Permanente Logo" class="company-logo" width="600px">
+                </div>
+            </div>
+            <div class="top-right">
+                <article class="card">
+                    <h3><a href="appointment.html">New Broker Appointment</a></h3>
+                    <p>Just getting started? Click here to visit our comprehensive walkthrough on how to get appointed with Company Name.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="brokerofrecord.html">Broker of Record</a></h3>
+                    <p>Details on how to access and submit changes to your book of business.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="commissions.html">Commissions &amp; Rewards</a></h3>
+                    <p>All about commission and rewards for every market.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="contact.html">Contact Us</a></h3>
+                    <p>Submit a contact request directly to our team for further support.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="index.html">Back to Home</a></h3>
+                </article>
+            </div>
+        </section>
+        </nav>
+           
+            <main>
+             <h2>
+                Broker Services Contact Form
+            </h2>
+            <h3>
+                Contact Us Today!
+            </h3>
+            <p>Required fields are marked with an asterisk (*).</p> 
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+                <div class="field-group">
+                    <label for="myFName">*First Name:</label>
+                    <input type="text" id="myFName" name="myFName" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="myLName">*Last Name:</label>
+                    <input type="text" id="myLName" name="myLName" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="myEmail">*Email:</label>
+                    <input type="email" id="myEmail" name="myEmail" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="myPhone">Phone Number</label>
+                    <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+                </div>
+
+                <div class="field-group">
+                    <label for="brokerID">Broker ID*</label>
+                    <input type="text" id="brokerID" name="brokerID" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="brokerNPN">Broker NPN</label>
+                    <input type="text" id="brokerNPN" name="brokerNPN">
+                </div>
+
+                <div class="field-group">
+                    <label for="topic">Topic*</label>
+                    <select id="topic" name="topic" required>
+                        <option value="License">License</option>
+                        <option value="Broker of Record Change">Broker of Record Change</option>
+                        <option value="Commissions">Commissions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-group subtopic" id="license-sub" style="display: block;">
+                    <label for="licenseSub">Subtopic</label>
+                    <select id="licenseSub" name="licenseSub">
+                        <option value="Renew/update my license" selected>Renew/update my license</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-group subtopic" id="bor-sub" style="display: none;">
+                    <label for="borSub">Subtopic</label>
+                    <select id="borSub" name="borSub">
+                        <option value="How do I process a BOR Change?">How do I process a BOR Change?</option>
+                        <option value="Inquiry on specific group (please enter in comments)">Inquiry on specific group (please enter in comments)</option>
+                        <option value="Retroactive Change Request">Retroactive Change Request</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-group subtopic" id="commissions-sub" style="display: none;">
+                    <label for="commissionsSub">Subtopic</label>
+                    <select id="commissionsSub" name="commissionsSub">
+                        <option value="Copy of Statement Needed">Copy of Statement Needed</option>
+                        <option value="Adjustment to payment requested">Adjustment to payment requested</option>
+                        <option value="How do I access my commission statement?">How do I access my commission statement?</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-group subtopic" id="other-sub" style="display: none;">
+                    <label for="otherSub">Subtopic</label>
+                    <select id="otherSub" name="otherSub">
+                        <option value="Other- See my Comments">Other- See my Comments</option>
+                    </select>
+                </div>
+
+                <div class="field-group wide">
+                    <label>Market(s)*</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="markets[]" value="CA"> CA</label>
+                        <label><input type="checkbox" name="markets[]" value="CO"> CO</label>
+                        <label><input type="checkbox" name="markets[]" value="MAS (MD, DC, VA)"> MAS</label>
+                        <label><input type="checkbox" name="markets[]" value="NW (OR and WA)"> NW</label>
+                        <label><input type="checkbox" name="markets[]" value="VA"> VA</label>
+                        <label><input type="checkbox" name="markets[]" value="WA"> WA</label>
+                        <label><input type="checkbox" name="markets[]" value="GA"> GA</label>
+                        <label><input type="checkbox" name="markets[]" value="Multimarket"> Multimarket</label>
+                    </div>
+                </div>
+
+                <div class="field-group wide">
+                    <label for="myComments">* Comments:</label>
+                    <textarea id="myComments" name="myComments" required rows="4"></textarea>
+                </div>
+
+                <div class="field-group wide submit-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+
+        <section class="swimlane swimlane-bottom">
+            <div class="bottom-left">
+                <img src="kplogo2.jpg" alt="Company Logo" class="footer-logo">
+            </div>
+            <div class="bottom-center">
+                <h3>Broker Services</h3>
+                <p>Phone: (800) 555-5555<br>
+                Email: <a href="mailto:BrokerServices@enablehyperlink.com">BrokerServices@enablehyperlink.com</a><br>
+                Hours of Operations: Monday - Friday, 6am to 6pm Pacific Time</p>
+            </div>
+            <div class="bottom-right">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">New Broker Appointment</a></li>
+                    <li><a href="brokerofrecord.html">Broker of Record</a></li>
+                    <li><a href="commissions.html">Commissions &amp; Rewards</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </section>
+               <footer>
+            Copyright &copy; 2026 Kaiser Permanente<br>
+            <a href="mailto:mudoose@asu.edu">mudoose@asu.edu</a>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('topic').addEventListener('change', function() {
+            var topic = this.value;
+            document.querySelectorAll('.subtopic').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            if (topic === 'License') {
+                document.getElementById('license-sub').style.display = 'block';
+            } else if (topic === 'Broker of Record Change') {
+                document.getElementById('bor-sub').style.display = 'block';
+            } else if (topic === 'Commissions') {
+                document.getElementById('commissions-sub').style.display = 'block';
+            } else if (topic === 'Other') {
+                document.getElementById('other-sub').style.display = 'block';
+            }
+        });
+    </script>
+    </body>
+</html>
